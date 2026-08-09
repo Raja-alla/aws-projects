@@ -1,0 +1,405 @@
+/* ================================
+   Global Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   Navigation
+================================ */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(11, 17, 32, 0.95);
+    border-bottom: 1px solid #1e293b;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f59e0b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f59e0b;
+}
+
+
+/* ================================
+   Hero Section
+================================ */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 30px 80px;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(245, 158, 11, 0.12),
+            transparent 35%
+        ),
+        #0b1120;
+}
+
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.small-title {
+    color: #f59e0b;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #f8fafc;
+}
+
+.hero h1 span {
+    color: #f59e0b;
+}
+
+.description {
+    max-width: 650px;
+    color: #94a3b8;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #f59e0b;
+    color: #111827;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #fbbf24;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   General Sections
+================================ */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 100px 30px;
+}
+
+.section h2 {
+    font-size: 36px;
+    color: #f8fafc;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   AWS Skills
+================================ */
+
+.skills-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #111827;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #f59e0b;
+}
+
+.skill-card h3 {
+    color: #f59e0b;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/* ================================
+   Certifications
+================================ */
+
+.certification-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.certification-card {
+    background-color: #111827;
+
+    border: 1px solid #1e293b;
+
+    border-left: 4px solid #f59e0b;
+
+    border-radius: 8px;
+
+    padding: 25px;
+}
+
+.certification-card h3 {
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+.certification-card p {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+
+/* ================================
+   Terraform Section
+================================ */
+
+.terraform-section {
+    background-color: #0f172a;
+
+    max-width: none;
+
+    padding-left: calc((100% - 1040px) / 2);
+    padding-right: calc((100% - 1040px) / 2);
+}
+
+.terraform-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.terraform-content h3 {
+    color: #f59e0b;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.terraform-content p {
+    color: #94a3b8;
+}
+
+.code-box {
+    background-color: #020617;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 8px;
+
+    padding: 25px;
+
+    font-family: "Courier New", monospace;
+
+    color: #f59e0b;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================================
+   Projects
+================================ */
+
+.project-card {
+    background-color: #111827;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    max-width: 750px;
+}
+
+.project-card h3 {
+    color: #f59e0b;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #94a3b8;
+
+    margin-bottom: 25px;
+}
+
+.technology-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.technology-list span {
+    background-color: #1e293b;
+
+    color: #cbd5e1;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid #1e293b;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-container {
+        grid-template-columns: 1fr;
+    }
+
+    .terraform-content {
+        grid-template-columns: 1fr;
+    }
+
+    .terraform-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
