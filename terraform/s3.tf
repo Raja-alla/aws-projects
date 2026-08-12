@@ -79,7 +79,7 @@ resource "aws_s3_bucket_policy" "cloudfront" {
   bucket = module.website_s3.bucket_id
 
   policy = data.aws_iam_policy_document.cloudfront_s3.json
-  
+
 }
 
 resource "aws_s3_bucket_versioning" "terraform_state_bucket" {

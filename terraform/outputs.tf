@@ -1,6 +1,6 @@
 output "s3_bucket_name" {
   description = "bucket name"
-  value = module.website_s3.bucket_id
+  value       = module.website_s3.bucket_id
 }
 
 output "s3_bucket_arn" {
